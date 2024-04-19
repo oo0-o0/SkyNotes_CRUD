@@ -1,0 +1,142 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+}
+
+.titulo
+{
+    background: #b4d3e2;
+    padding: 12px;
+    text-align: center;
+    color: #ffffff;
+    overflow: hidden;    
+}
+
+.conteiner
+{
+    background-color: #CFE0E8;
+    border-radius: 14px;
+    width: 100%;
+    max-width: 650px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;}
+
+.formulario
+{
+    padding-top: 10px;
+    padding-left: 19px;
+    padding-bottom: 19px;
+    padding-right: 17px;
+}
+
+.formulario label{
+    color: #002B40;
+}
+
+.caixas
+{
+    border: transparent;
+    margin-bottom: 13px;
+    display: inline;
+    border-radius: 8px;
+    width: 100%;
+    height: 30px;
+    background-color: #F1F7FA;
+    padding: 9px;
+    font-family: "Poppins", sans-serif;
+}
+
+.descr
+{
+
+    margin-bottom: 13px;
+    display: inline;
+    resize: none;
+    border-radius: 8px;
+    width: 100%;
+    padding: 9px;
+    border: transparent;
+    background-color: #F1F7FA;
+    font-family: "Poppins", sans-serif;
+}
+
+.botao
+{
+    margin-top: 13px;
+    width: 48%;
+    align-items: center;
+    align-content: center;
+    height: 30px;
+    background-color: #b4d3e2;
+    border: transparent;
+    border-radius: 8px;
+    font-family: "Poppins", sans-serif;
+    transition: color 100ms linear;
+    text-align: center;
+    margin-left: 5px;    
+    font-weight: bold;
+}
+
+.botao:hover
+{
+    background-color: #a0c4d6;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+.opcaoPrioridade1
+{
+    margin-right: 3px;
+    margin-left: 12%; 
+}
+.opcaoPrioridade
+{
+    margin-right: 3px;
+    margin-left: 7%; 
+}
+
+.campData
+{
+    background-color: #F1F7FA;
+    border: 1px solid #B4DBDC;
+    padding: 9px;
+    font-family: "Poppins", sans-serif;
+    margin-top: 5px;
+    margin-bottom: 13px;
+    margin-left: 4px;
+    margin-right: 50px;
+    border-radius: 8px;
+    padding: 9px;
+}
+
+.statusTarefa
+{
+    background-color: #F1F7FA;
+    border: 1px solid #B4DBDC;
+    padding: 9px;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 13px;
+    margin-left: 4px;
+    border-radius: 8px;
+    padding: 9px;
+}
+
+#prazoId
+{
+    margin-left: 35px;
+}
+
+#prioridadeId
+{
+    margin-bottom: 2px;
+}

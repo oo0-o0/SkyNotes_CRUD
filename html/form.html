@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title> Criar Tarefa </title>
+        <link rel="shortcut icon" type="imagex/png" href="../imgs/logoSKYNOTES.png">
+
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../css/form.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@400;500;600;800&display=swap" rel="stylesheet">
+    </head>
+        <div class="conteiner">
+            <div class="titulo">
+                <h2>Criar tarefa</h2>
+            </div>
+
+            <form method="post" action="../php/form.php" class="formulario">
+                <label><b>Nome da tarefa:</b></label><br>
+                <input type="text" name="name" required class="caixas"> 
+               
+                <label><b>Descrição da tarefa:</b></label><br>
+                <textarea name="descricao" rows="5" cols="50" required class="descr"></textarea>
+
+                <label><b>Categoria:</b></label><br>
+                <input type="text" name="categoria" class="caixas"> 
+
+                <label id="prazoId"><b>Prazo:</b></label>
+                <input type="date" name="prazo" class="campData">
+                
+                <label><b>Status da tarefa:</b></label>
+                <select name="status_tarefa" required class="statusTarefa">
+                    <option value="Nao_iniciada">Não iniciada</option>
+                    <option value="iniciada">Iniciada</option>
+                    <option value="andamento">Em andamento</option>
+                    <option value="concluida">Concluída</option>
+                </select>
+                <br>
+
+                <label id="prioridadeId"><b>Prioridade:</b></label><br>
+                    <input type="radio" name="prioridade" value="baixa" class="opcaoPrioridade1">Baixa  
+                    <input type="radio" name="prioridade" value="normal" class="opcaoPrioridade">Normal
+                    <input type="radio" name="prioridade" value="importante" class="opcaoPrioridade">Importante
+                    <input type="radio" name="prioridade" value="urgente" class="opcaoPrioridade">Urgente
+                    <br>
+
+                <input type="submit" value="Criar" class="botao">
+                <input type="reset" value="Limpar" class="botao">
+            </form>
+        </div>
+    </body>
+</html>

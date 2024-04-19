@@ -1,0 +1,46 @@
+body 
+{
+    background-color: #c9e4f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Poppins;
+}
+
+.container 
+{
+    background-color: white;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(255, 234, 234, 0.329);
+    text-align: center;
+    max-width: 600px; 
+}
+
+.mensagem 
+{
+    color: #002B40;
+    font-size: 25px; 
+    font-weight: bold; 
+    margin-bottom: 30px;
+}
+
+.botao-voltar 
+{
+    font-size: 18px;
+    background-color: #c9e4f1;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: #eeeeee;
+    transition: background-color 0.3s ease;
+}
+
+.botao-voltar:hover 
+{
+    background-color: #81c3e2;
+}

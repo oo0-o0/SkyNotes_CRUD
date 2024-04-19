@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Login </title>
+    <link rel="shortcut icon" type="imagex/png" href="imgs/logoSKYNOTES.png">
+    <link rel="stylesheet" type="text/css" href="../css/login.css">
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+</head>
+
+<style>
+    .botao-submit[disabled] 
+    {
+        background-color: #ccc;
+        cursor: not-allowed;
+    }
+    
+    .mensagem-erro 
+    {
+        color: red;
+        font-weight: bold;
+    }
+
+</style>
+<body>
+    <img src="../imgs/ceu.png" alt="Imagem 1" class="img-ceu">
+    <img src="../imgs/user.png" alt="Imagem 2" class="img-user">
+
+    <div class="container">
+        <form method="post" action="../php/login.php"> 
+            <div>
+                <h1>Entrar</h1>
+            </div>
+            <div class="input-box usuario">
+                <input type="text" name="usuario" id="usuario" placeholder=" ">
+                <label for="usuário"> Usuário</label>
+            </div>
+            <div class="input-box senha">
+                <input type="password" name="senha" id="senha" placeholder=" ">
+                <label for="senha"> Senha</label>
+                <br> <br> <div id="infoSenha">* Min. 8 caracteres e Max. 30</div>
+                <div class="mensagem" id="mensagemSenha"></div> 
+            </div>
+            <input type="submit" value="Entrar" id="entrar" name="login" class ="botao-submit"> 
+            <input type="submit" value="Registrar" id="register" name="register" class="botao-submit">
+        </form>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() 
+        {
+            var senhaInput = document.getElementById("senha");
+            var entrarButton = document.getElementById("entrar");
+            var registerButton = document.getElementById("register");
+        
+            entrarButton.disabled = true;
+            registerButton.disabled = true;
+        
+            senhaInput.addEventListener("input", function() 
+            {
+                var senha = senhaInput.value;
+
+                if (senha.length >= 8 && senha.length <= 30) 
+                {
+                    entrarButton.disabled = false;
+                    registerButton.disabled = false;
+                } 
+                else 
+                {
+                    entrarButton.disabled = true;
+                    registerButton.disabled = true;
+                }
+            });
+        });
+        
+    </script>
+</body>
+</html>

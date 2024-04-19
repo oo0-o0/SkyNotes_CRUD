@@ -1,0 +1,115 @@
+body
+{
+    font-family: Poppins;
+    margin: 0;
+    padding: 0;
+}
+
+header 
+{
+    background-color: #87bdd8;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    margin: 0 auto;
+    /* Centralizar horizontalmente */
+}
+
+
+.sidebar 
+{
+    width: 250px;
+    background-color: #fcfcfc;
+    padding: 20px;
+    box-sizing: border-box;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.user-profile 
+{
+    text-align: center;
+}
+
+.profile-image 
+{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.edit-profile 
+{
+    display: block;
+    text-decoration: none;
+    background-color: #87bdd8;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.edit-profile:hover 
+{
+    background-color: #b7d7e8;
+}
+
+main 
+{
+    margin-left: 280px;
+    /* Largura da barra lateral + margem para espaçamento */
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+section 
+{
+    width: calc(50% - 20px);
+    padding: 20px;
+    border: 1px solid #f1f1f1;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+h2 
+{
+    margin-top: 0;
+}
+
+p 
+{
+    margin-bottom: 15px;
+}
+
+.button 
+{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #87bdd8;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(236, 236, 236, 0.877);
+    /* Sombra leve */
+
+    transition: background-color 0.3s ease;
+}
+
+.button:hover 
+{
+    background-color: #b7d7e8;
+}
+
+.button-space {
+    display: block;
+    height: 20px; /* Altura do espaço */
+}
