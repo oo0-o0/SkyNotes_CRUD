@@ -37,3 +37,4 @@ $dbname = "SkyNotesDB";
 ```
   http://localhost/SkyNotes_CRUD
 ```
+**| DIVIRTA-SE!**
