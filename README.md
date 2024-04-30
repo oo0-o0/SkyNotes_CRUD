@@ -12,11 +12,13 @@ Repositório para armazenamento dos códigos do site "SkyNotes", uma plataforma 
 
 Para rodar:
 1. Clone o repositório no seu computador. 
+
 No CMD
 ```bash
   git clone https://github.com/oo0-o0/SkyNotes_CRUD.git
 ```
 2. Mova ele para a pasta htdocs do xampp para conseguir rodar o PHP localmente.
+
 No CMD
 ```bash
   move SkyNotes_CRUD c:\xampp\htdocs
